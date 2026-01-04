@@ -1,0 +1,192 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(90deg, #f7d600, #ffea61);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+  width: 60px;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #004b8d;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background: #004b8d;
+  color: white;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(135deg, #fff1a8, #ffe066);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  color: #004b8d;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 17px;
+}
+
+/* ===== SECTIONS ===== */
+.matches,
+.players,
+.stats {
+  padding: 40px 25px;
+  background: white;
+  margin: 30px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: #004b8d;
+  margin-bottom: 15px;
+  border-left: 6px solid #f7d600;
+  padding-left: 10px;
+}
+
+/* ===== PLAYER GRID ===== */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+.player-card {
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.player-card img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #f7d600;
+}
+
+/* ===== LISTS ===== */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ===== TABLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 15px;
+}
+
+th {
+  background: #004b8d;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f7faff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #004b8d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+   .player-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .matches,
+  .players,
+  .stats {
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+}
